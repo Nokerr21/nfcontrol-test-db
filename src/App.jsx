@@ -6,7 +6,7 @@ function App() {
     const handleOnSubmit = async (e) => {
         e.preventDefault();
         let result = await fetch(
-        'mongodb+srv://noker3009:fplKWAqwFPfu74Vh@nfcs.ubiet8w.mongodb.net?retryWrites=true&w=majority', {
+        'https://github.com/Nokerr21/nfcontrol-test-db/blob/main/backend/index.js', {
             method: "post",
             body: JSON.stringify({ name, email }),
             headers: {
