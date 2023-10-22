@@ -2,6 +2,7 @@
 // To connect with your mongoDB database
 const mongoose = require('mongoose');
 const uri = "mongodb+srv://noker3009:fplKWAqwFPfu74Vh@nfcs.ubiet8w.mongodb.net/?retryWrites=true&w=majority";
+console.log("aaaaaaaaaaaaa")
 mongoose.connect(uri, {
     dbName: 'nfcs',
     useNewUrlParser: true,
