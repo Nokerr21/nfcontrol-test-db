@@ -1,12 +1,13 @@
 
 // To connect with your mongoDB database
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/', {
-    dbName: 'yourDB-name',
+const uri = "mongodb+srv://noker3009:fplKWAqwFPfu74Vh@nfcs.ubiet8w.mongodb.net/?retryWrites=true&w=majority";
+mongoose.connect(uri, {
+    dbName: 'nfcs',
     useNewUrlParser: true,
     useUnifiedTopology: true
 }, err => err ? console.log(err) : 
-    console.log('Connected to yourDB-name database'));
+    console.log('Connected to nfcs database'));
  
 // Schema for users of app
 const UserSchema = new mongoose.Schema({
