@@ -6,7 +6,7 @@ function App() {
     const handleOnSubmit = async (e) => {
         e.preventDefault();
         let result = await fetch(
-        'http://localhost:5000/register', {
+        'mongodb+srv://noker3009:fplKWAqwFPfu74Vh@nfcs.ubiet8w.mongodb.net?retryWrites=true&w=majority', {
             method: "post",
             body: JSON.stringify({ name, email }),
             headers: {
@@ -17,7 +17,7 @@ function App() {
         console.warn(result);
         if (result) {
             alert("Data saved succesfully");
-            setEmail("");
+            setEmail("a");
             setName("");
         }
     }
